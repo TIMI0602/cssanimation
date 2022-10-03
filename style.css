@@ -333,9 +333,20 @@ body{
     overflow: hidden;
 }
 
+.name-box-box {
+    
+    height: 95%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+    border-radius: 5px;
+}
+
 .name-box {
-    height: 60%;
-    width: 70%;
+    height: 98%;
+    width: 98%;
     background: rgb(63, 68, 168);
     box-shadow: 0 0 10px  #d400d4;
     position: relative;
@@ -362,6 +373,7 @@ body{
     font-family: sans-serif;
     letter-spacing: 0.2em;
     animation: slide 12s linear infinite;
+    margin-top: 100px;
 }
 
 
@@ -388,12 +400,12 @@ body{
     0%{
         opacity: 0;
         transform: rotateY(90deg);
-        filter: blur(10px);
+        filter: blur(50px);
     }
     100%{
         opacity: 1;
         transform: rotateY(0deg);
-        filter: blur(0px);
+        filter: blur(50px);
     }
 
 
@@ -796,12 +808,15 @@ body{
     }
 }
 
+
+
+
 @media screen and (max-width:960px)
 {
     .load-box {
         height: 600px;
         width: 100%;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         border-radius: 10px;
         display: flex;
         justify-content: center;
@@ -1161,7 +1176,6 @@ body{
         font-family: sans-serif;
         letter-spacing: 0.2em;
         animation: slide 12s linear infinite;
-        
         margin-top: 100px;
     }
     
